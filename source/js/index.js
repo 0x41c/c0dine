@@ -44,10 +44,10 @@ async function pwnMe() {
 
         var fileNames = [
           "global/globals.js",
+          "utils/utils.js",
           "utils/int64_utils.js",
           "resources/int64.js",
           "resources/structures.js",
-          "utils/utils.js",
           "stages/stageZero.js",
           "stages/stageOne.js",
           "trigger.js",
