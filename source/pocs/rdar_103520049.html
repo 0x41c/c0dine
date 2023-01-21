@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <script>
+            let container = document.createElement('container');
+            let child = document.createElement('child');
+
+            child.style.display = "contents";
+            
+            document.body.appendChild(container);
+            container.appendChild(child);
+
+            container.remove()
+
+            // console.table(child);
+        </script>
+    </body>
+</html>
