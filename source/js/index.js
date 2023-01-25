@@ -35,8 +35,12 @@ async function pwnMe() {
         let element = document.getElementsByClassName("logs")[0];
         element.innerHTML = "";
         function appendLog(log) {
-          let line = document.createElement("p");
-          line.innerText = log;
+          let line = document.createElement('p');
+          if (log.includes('+')) {
+            let bold = document.createElement('strong');
+            bold.innerText = log;
+            line.appendChild(bold);
+          } else line.innerText = log;
           element.appendChild(line);
           console.log(log);
         }
